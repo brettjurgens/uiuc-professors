@@ -1,0 +1,92 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// cause paul irish knows his shit
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  #name {
+    text-align: center;
+    margin: 14px 0 20px;
+    font-size: 24px;
+    color: #666;
+  }
+}
+
+.twitter-typeahead {
+  width: 500px;
+  margin: 0 auto;
+  display: block !important; // fuck twitter
+}
+
+.typeahead,
+.tt-query,
+.tt-hint {
+  width: 500px;
+  height: 48px;
+  padding: 8px 12px;
+  font-size: 24px;
+  line-height: 30px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin: 0 auto;
+}
+
+.typeahead {
+  &:focus {
+    border-color: #aaa;
+  }
+}
+
+.tt-dropdown-menu {
+  width: 500px;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-top: none;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+     -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+          box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.tt-hint {
+  color: #999
+}
+
+.tt-suggestion {
+  padding: 8px 12px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.tt-suggestion.tt-cursor {
+  color: #fff;
+  background-color: #aaa;
+}
+
+.tt-suggestion p {
+  margin: 0;
+}
+
+#results {
+  margin-top: 1em;
+}
+
+#professor-profile-top {
+  width: 100%;
+
+  #professor-picture img {
+    width: 140px;
+    margin-right: 1em;
+  }
+
+  #professor-picture, #professor-name-dept {
+    display: inline-block;
+    vertical-align: top;
+  }
+}

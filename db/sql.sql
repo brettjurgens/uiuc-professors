@@ -1,0 +1,1 @@
+sections(id, crn, term, professor_id, course_id, created_at, updated_at, section_name)

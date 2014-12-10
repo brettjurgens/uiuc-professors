@@ -1,0 +1,55 @@
+.container
+  #name
+    \//uiucprofessors
+  #prefetch
+    %input.typeahead{placeholder: "Professor", type: "text"}/
+  #results
+    Type a professor's name ^
+
+%script#template{type: 'x-tmpl-mustache'}
+  #professor-profile-top
+    {{ #image_url }}
+    #professor-picture
+      %img{src: '{{ image_url }}'}
+    {{ /image_url }}
+
+    #professor-name-dept
+      %h1
+        {{f_name}} {{l_name}}
+      %h2
+        / hacky way to get 'in' to only display when necessary.
+        {{#role}}
+        {{role}} 
+        {{#department}}
+        in
+        {{/department}}
+        {{/role}}
+        {{department}}
+
+      {{ #netid }}
+      Email: {{ netid }}@illinois.edu
+      {{ /netid }}
+      {{ #address }}
+      %br
+      Office: {{ address }}
+      {{ /address }}
+      {{ #phone }}
+      %br
+      Phone Number: {{ phone }}
+      {{ /phone }}
+  %br
+  %h2
+    Courses:
+  %ul
+    {{#courses}}
+    %h3
+      {{number}} - {{name}}
+    %ul
+      {{#sections}}
+      %li
+        Section {{section_name}} (CRN: {{ crn }})
+      {{/sections}}
+    {{/courses}}
+    {{ ^courses }}
+    No Courses found for this Professor. :(
+    {{ /courses }}

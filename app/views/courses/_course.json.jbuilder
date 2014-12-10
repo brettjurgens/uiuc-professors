@@ -1,0 +1,1 @@
+json.extract! course, :name, :department, :course_num

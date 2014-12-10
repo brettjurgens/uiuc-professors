@@ -1,0 +1,26 @@
+{
+  "name": "uiuc-professors",
+  "version": "0.0.0",
+  "authors": [
+    "Brett Jurgens <brett@brettjurgens.com>"
+  ],
+  "description": "bower stuffs",
+  "keywords": [
+    "uiuc"
+  ],
+  "license": "MIT",
+  "homepage": "brettjurgens.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/assets/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "typeahead.js": "~0.10.5",
+    "mustache": "~0.8.2"
+  }
+}

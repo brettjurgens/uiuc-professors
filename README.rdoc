@@ -1,0 +1,12 @@
+== UiucProfessors
+Search for information about professors
+
+=== ToDo
+- Design
+- Similarly named professors (probably can't do too much about this)
+- Anything else that I see
+
+== Usage Instructions
+There are two tasks that should be run once a semester.
+
+The `courses` parser should be run first to build up a list of courses and then the `professors` parser should be run to fill in Professor information.
